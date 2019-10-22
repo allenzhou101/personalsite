@@ -3,7 +3,8 @@ body {
   background: black;
   color: white;
   font-family: 'Montserrat', sans-serif;
-
+  width: 80%;
+  overflow-x: hidden;
 }
 p {
   margin: 0;
@@ -35,15 +36,38 @@ a:hover::after {
 
 .navigation-bar {
   position: fixed;
-  top: 2vh;
-  right: 2vw;
+  top: 50vh;
+  right: 5vw;
+  transform: rotate(90deg);
+  transform-origin: right;
+}
+.navigation-bar a {
+  margin: 5px;
 }
 .contact {
 
 }
 .intro {
+  font-weight: bold;
 
 }
 .content {
-  font-size: 8vh;
+  font-size: 7.2vh;
+}
+.horizontal_scroll {
+  white-space: nowrap;
+}
+.slide {
+  display: inline-block;
+  text-align: center;
+  margin: 5% auto;
+
+}
+.slide.two {
+  /* text-align: left; */
+}
+.nature {
+}
+.image_one {
+  width: 60%;
 }
