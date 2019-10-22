@@ -36,7 +36,7 @@ a:hover::after {
 
 .navigation-bar {
   position: fixed;
-  top: 50vh;
+  top: 55vh;
   right: 5vw;
   transform: rotate(90deg);
   transform-origin: right;
