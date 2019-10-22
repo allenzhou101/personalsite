@@ -17,12 +17,12 @@
     </script>
   </head>
   <body>
-    <div class = "navigation-bar">
-      <a class = "contact" href = "mailto:allen.zhou101@gmail.com">
+    <div id = "link" class = "navigation-bar">
+      <a  class = "contact" href = "mailto:allen.zhou101@gmail.com">
         Email
       </a>
       <a href = "https://github.com/allenzhou101" target = "none">Github</a>
-      <a class = "resume" href = "resume.html">
+      <a  class = "resume" href = "resume.html">
         Resume
       </a>
       <a href = "https://www.linkedin.com/in/allen-zhou-aa975a164" target = "none">LinkedIn</a>
@@ -50,27 +50,57 @@
         I collect sunglasses. So far, I have one pair.
       </p>
     </div>
-    <!-- <img src = "images/canada_canoe.jpg" class = "image_one"> -->
+    <h3 class = "selected_works">selected works</h3>
+
     <div class = "horizontal_scroll">
-      <div class = "slide one">
-        <img src = "images/canada_mountains.jpg" class = "image_one">
-      </div>
-      <div class = "slide two">
-        <img src = "images/canada_house.jpg" class = "image_one">
+      <a href = "https://apalebluedot.world" class = "slide one">
+        <div class = "image-holder">
+          <img src = "images/canada_mountains.jpg" class = "image_one">
+        </div>
+          <div class = "description">
+            In the name of Carl Sagan
+            <div class = "space"></div>
+            <!-- &#8250; -->
+          </div>
+      </a>
+      <a href = "https://moroninc.com" class = "slide one">
+        <div class = "image-holder">
+          <img src = "images/canada_house.jpg" class = "image_one">
+        </div>
+          <div class = "description">
+            Moron: Idea Development Group
+            <div class = "space"></div>
+            <!-- &#8250; -->
+          </div>
+      </a>
+      <a href = "https://verdantleaf.org" class = "slide one">
+        <div class = "image-holder">
+          <img src = "images/canada_canoe.jpg" class = "image_one">
+        </div>
+          <div class = "description">
+            High school article publishing
+            <div class = "space"></div>
+            <!-- &#8250; -->
+          </div>
+      </a>
+      <!-- <div class = "slide two">
+        <div class = "image-holder">
+          <img src = "images/canada_house.jpg" class = "image_one">
+        </div>
       </div>
       <div class = "slide three">
         <img src = "images/canada_mountains.jpg" class = "image_one">
-      </div>
+      </div> -->
       <!--
       <div class = "nature">
         <img src = "images/canada_mountains.jpg" class = "image_one">
       </div> -->
     </div>
-    <!-- <div style = "height: 80vh;"></div> -->
+    <div style = "height: 180vh;"></div>
     <br><br>
 
     <br><br>
-    Here are some of my projects.
+    <!-- Here are some of my projects.
     <ul>
       <li>
         <a href = "https://apalebluedot.world" target = "none">
@@ -87,7 +117,7 @@
           High school article publishing
         </a>
       </li>
-
+ -->
 
     </ul>
     Here are some nice links to click:
@@ -111,18 +141,18 @@
   var horizontal_scrollNum = document.querySelector(".horizontal_scroll").offsetTop;
 
     document.addEventListener("scroll", function() {
-      var scrollPosition = window.scrollY;
+      var scrollPosition = window.scrollY / 2;
       // console.log(scrollPosition);
-      document.querySelector(".horizontal_scroll").style.transform = "translateX(-" + scrollPosition + "px)";
+      // document.querySelector(".horizontal_scroll").style.transform = "translateX(-" + scrollPosition + "px)";
 
-      // var difference = horizontal_scrollNum - scrollPosition;
-      // console.log(difference);
-      // if (difference < 0) {
-      //   document.querySelector(".horizontal_scroll").style.transform = "translateX(" + difference + "px)";
-      // }
-      // else {
-      //   document.querySelector(".horizontal_scroll").style.transform = "translateX(" + 0 + "px)";
-      // }
+      var difference = horizontal_scrollNum - scrollPosition;
+      console.log(difference);
+      if (difference < 0) {
+        document.querySelector(".horizontal_scroll").style.transform = "translateX(" + difference + "px)";
+      }
+      else {
+        document.querySelector(".horizontal_scroll").style.transform = "translateX(" + 0 + "px)";
+      }
     });
   </script>
 </html>

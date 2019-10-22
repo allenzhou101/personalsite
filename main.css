@@ -16,10 +16,10 @@ a {
   display: inline-block;
   height: 2vh;
 }
-a:hover {
+#link a:hover {
   /* color: gray; */
 }
-a::after {
+#link a::after {
   content: "";
   display: block;
   height: 1px;
@@ -28,7 +28,7 @@ a::after {
   transition: .25s;
   float: left;
 }
-a:hover::after {
+#link a:hover::after {
   width: 0%;
   background: gray;
   float: right;
@@ -67,14 +67,50 @@ a:hover::after {
 }
 .horizontal_scroll {
   white-space: nowrap;
-  /* position: sticky; */
-  /* top: 0; */
+  position: sticky;
+  top: 0;
+  margin-top: 5%;
+
+  /* margin-left: 15%; */
+}
+.selected_works {
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  margin-top: 5%;
 }
 .slide {
   display: inline-block;
   text-align: center;
-  margin: 5% auto;
+  margin: 10%;
 
+}
+.slide img {
+  transition: .5s;
+}
+.image-holder {
+  display: inline-block;
+  overflow: hidden;
+}
+.slide:hover img {
+  /* transform: scale(1.1); */
+  filter: brightness(80%);
+}
+.slide .description {
+  position: absolute;
+  /* font-size: 3vh; */
+  /* line-height: 4vh; */
+  /* transition: .5s; */
+}
+.slide:hover .description {
+  /* transform: translateY(-8vh); */
+}
+.slide:hover .space {
+  width: 15px;
+}
+.description {
+  height: 4vh;
+  overflow: hidden;
 }
 .slide.two {
   /* text-align: left; */
@@ -82,5 +118,11 @@ a:hover::after {
 .nature {
 }
 .image_one {
-  width: 60%;
+  width: 400px;
+  height: 400px;
+}
+.space {
+  display: inline-block;
+  transition: .25s;
+  width: 0;
 }
