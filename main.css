@@ -126,3 +126,6 @@ a {
   transition: .25s;
   width: 0;
 }
+.footer {
+  margin-top: 100vh;
+}

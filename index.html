@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <link rel="apple-touch-icon" href="images/canada_mountains.jpg" />
+    <link rel="icon" href="images/canada_canoe.jpg" type="image/x-icon" />
     <title>Allen Zhou's Online Home</title>
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
     <link rel = "stylesheet" href = "main.css">
@@ -83,6 +83,17 @@
             <!-- &#8250; -->
           </div>
       </a>
+      <a href = "https://azuresky.co" class = "slide one">
+        <div class = "image-holder">
+          <img src = "images/canada_canoe.jpg" class = "image_one">
+        </div>
+          <div class = "description">
+            High school article publishing
+            <div class = "space"></div>
+            <!-- &#8250; -->
+          </div>
+      </a>
+
       <!-- <div class = "slide two">
         <div class = "image-holder">
           <img src = "images/canada_house.jpg" class = "image_one">
@@ -96,10 +107,6 @@
         <img src = "images/canada_mountains.jpg" class = "image_one">
       </div> -->
     </div>
-    <div style = "height: 180vh;"></div>
-    <br><br>
-
-    <br><br>
     <!-- Here are some of my projects.
     <ul>
       <li>
@@ -117,9 +124,11 @@
           High school article publishing
         </a>
       </li>
- -->
+
 
     </ul>
+  -->
+  <div id = "link" class = "footer">
     Here are some nice links to click:
     <ul>
 
@@ -136,12 +145,13 @@
         <a href = "Allen's Resume.docx" target = "none">My Resume</a>
       </li>
     </ul>
+  </div>
   </body>
   <script>
   var horizontal_scrollNum = document.querySelector(".horizontal_scroll").offsetTop;
 
     document.addEventListener("scroll", function() {
-      var scrollPosition = window.scrollY / 2;
+      var scrollPosition = window.scrollY;
       // console.log(scrollPosition);
       // document.querySelector(".horizontal_scroll").style.transform = "translateX(-" + scrollPosition + "px)";
 
