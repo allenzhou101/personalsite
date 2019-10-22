@@ -33,10 +33,11 @@
     </h3>
     <br>
     <div class = "content">
-      <p>
-        I develop unique web and mobile applications with purpose and panache.
+      <p class = "tagline">
+        I develop experiences with constant pursuit of the novel and the elegant.
+        <!-- I develop unique web and mobile applications with purpose and panache. -->
         <!-- <br><br> -->
-        Well, at least I try my best.
+        <!-- Well, at least I try my best. -->
       </p>
       <!-- <br>
       <p>
@@ -44,7 +45,7 @@
         Currently, I'm developing a mobile application with React Native.
       </p> -->
       <br>
-      <p>
+      <p class = "hobbies">
         My hobbies? I love being outside, supporting Chelsea, playing guitar, and reading everyday. Also,
         I collect sunglasses. So far, I have one pair.
       </p>
@@ -55,7 +56,7 @@
         <img src = "images/canada_mountains.jpg" class = "image_one">
       </div>
       <div class = "slide two">
-        <img src = "images/canada_mountains.jpg" class = "image_one">
+        <img src = "images/canada_house.jpg" class = "image_one">
       </div>
       <div class = "slide three">
         <img src = "images/canada_mountains.jpg" class = "image_one">
@@ -65,7 +66,7 @@
         <img src = "images/canada_mountains.jpg" class = "image_one">
       </div> -->
     </div>
-
+    <!-- <div style = "height: 80vh;"></div> -->
     <br><br>
 
     <br><br>
@@ -106,4 +107,22 @@
       </li>
     </ul>
   </body>
+  <script>
+  var horizontal_scrollNum = document.querySelector(".horizontal_scroll").offsetTop;
+
+    document.addEventListener("scroll", function() {
+      var scrollPosition = window.scrollY;
+      // console.log(scrollPosition);
+      document.querySelector(".horizontal_scroll").style.transform = "translateX(-" + scrollPosition + "px)";
+
+      // var difference = horizontal_scrollNum - scrollPosition;
+      // console.log(difference);
+      // if (difference < 0) {
+      //   document.querySelector(".horizontal_scroll").style.transform = "translateX(" + difference + "px)";
+      // }
+      // else {
+      //   document.querySelector(".horizontal_scroll").style.transform = "translateX(" + 0 + "px)";
+      // }
+    });
+  </script>
 </html>
