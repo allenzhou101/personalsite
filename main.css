@@ -1,5 +1,49 @@
 body {
-  margin: 5% auto;
-  width: 50%;
+  margin: 5%;
+  background: black;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
 
+}
+p {
+  margin: 0;
+}
+a {
+  text-decoration: none;
+  color: white;
+  transition: .25s;
+  display: inline-block;
+  height: 2vh;
+}
+a:hover {
+  /* color: gray; */
+}
+a::after {
+  content: "";
+  display: block;
+  height: 1px;
+  width: 100%;
+  background: white;
+  transition: .25s;
+  float: left;
+}
+a:hover::after {
+  width: 0%;
+  background: gray;
+  float: right;
+}
+
+.navigation-bar {
+  position: fixed;
+  top: 2vh;
+  right: 2vw;
+}
+.contact {
+
+}
+.intro {
+
+}
+.content {
+  font-size: 8vh;
 }
