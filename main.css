@@ -127,5 +127,9 @@ a {
   width: 0;
 }
 .footer {
-  margin-top: 100vh;
+  height: 200vh;
+  margin-bottom: 100vh;
+}
+.footer2 {
+  opacity: 0;
 }
