@@ -8,11 +8,12 @@ body {
 }
 .navigation-bar {
   position: fixed;
-  top: 55vh;
+  top: 80vh;
   right: 5vw;
   transform: rotate(90deg);
   transform-origin: right;
   z-index: 100;
+  font-size: 4vh;
 }
 .navigation-bar a {
   margin: 5px;
@@ -162,5 +163,25 @@ img {
   .footer2 {
     font-size: 40vh;
 
+  }
+}
+.outline {
+  display: inline-block;
+  color: black;
+  text-shadow:
+		-1px -1px 0 #fff,
+		1px -1px 0 #fff,
+		-1px 1px 0 #fff,
+		1px 1px 0 #fff;
+}
+.space {
+  display: inline-block;
+  animation: spaceChange 1s infinite alternate;
+  width: 0;
+  /* background: white; */
+}
+@keyframes spaceChange {
+  100% {
+    width: 100px;
   }
 }
