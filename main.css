@@ -6,6 +6,17 @@ body {
   width: 80%;
   overflow-x: hidden;
 }
+.navigation-bar {
+  position: fixed;
+  top: 55vh;
+  right: 5vw;
+  transform: rotate(90deg);
+  transform-origin: right;
+  z-index: 100;
+}
+.navigation-bar a {
+  margin: 5px;
+}
 p {
   margin: 0;
 }
@@ -14,7 +25,7 @@ a {
   color: white;
   transition: .25s;
   display: inline-block;
-  height: 2vh;
+  /* height: 2.5vh; */
 }
 img {
   width: 80%;
@@ -23,6 +34,11 @@ img {
 }
 .horizontal_scroll {
   text-align: center;
+}
+@media screen and (max-width: 1020px) {
+  a {
+    text-decoration: underline;
+  }
 }
 @media screen and (min-width: 1020px) {
 
@@ -53,17 +69,7 @@ img {
     float: right;
   }
 
-  .navigation-bar {
-    position: fixed;
-    top: 55vh;
-    right: 5vw;
-    transform: rotate(90deg);
-    transform-origin: right;
-    z-index: 100;
-  }
-  .navigation-bar a {
-    margin: 5px;
-  }
+
   .contact {
 
   }
@@ -86,6 +92,7 @@ img {
     color: #b3b3ff;
     margin-bottom: 10%;
     font-style: italic;
+    margin-top: 3vh;
   }
   .horizontal_scroll {
     white-space: nowrap;
