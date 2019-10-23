@@ -53,7 +53,7 @@ a {
 
 }
 .content {
-  font-size: 8.2vh;
+  font-size: 13vh;
 
 }
 .tagline {
@@ -61,9 +61,11 @@ a {
 }
 .hobbies {
   /* text-align: justify; */
-  /* width: 90%; */
-  /* margin-left: 20%; */
-  /* font-size: 3vh; */
+  width: 80%;
+  margin-left: 10%;
+  font-size: 7vh;
+  color: gray;
+  margin-bottom: 10%;
 }
 .horizontal_scroll {
   white-space: nowrap;
@@ -131,5 +133,5 @@ a {
 }
 .footer2 {
   font-size: 40vh;
-  
+
 }
