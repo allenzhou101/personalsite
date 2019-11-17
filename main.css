@@ -10,10 +10,13 @@ body {
   position: fixed;
   top: 80vh;
   right: 5vw;
-  transform: rotate(90deg);
+  transform: rotate(90deg) translateY(5vh);
   transform-origin: right;
   z-index: 100;
   font-size: 4vh;
+  animation: fadeInUpSpecial 1s .25s forwards;
+  opacity: 0;
+
 }
 .navigation-bar a {
   margin: 5px;
@@ -77,10 +80,33 @@ img {
   .intro {
     font-weight: bold;
     margin: 3% 0 2% 0 ;
+    animation: fadeIn 1s forwards;
+    opacity: 0;
+  }
+  @keyframes fadeIn {
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes fadeInUp {
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+      line-height: 13vh;
+    }
+  }
+  @keyframes fadeInUpSpecial {
+    100% {
+      transform: translateY(0) rotate(90deg);
+      opacity: 1;
+    }
   }
   .content {
     font-size: 10vh;
-
+    opacity: 0;
+    line-height: 20vh;
+    transform: translateY(5vh);
+    animation: fadeInUp 2s .75s  forwards;
   }
   .tagline {
 
