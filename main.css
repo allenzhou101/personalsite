@@ -5,6 +5,12 @@ body {
   font-family: 'Montserrat', sans-serif;
   width: 80%;
   overflow-x: hidden;
+  /* animation: backgroundChange 5s alternate infinite; */
+}
+@keyframes backgroundChange {
+  100% {
+    background: gray;
+  }
 }
 .navigation-bar {
 
@@ -111,15 +117,20 @@ img {
     font-style: italic;
   }
   .focus {
+    border: 1px solid white;
     width: 100%;
+    padding: 65px 5px 65px 5px;
     font-size: 12vh;
     margin-left: 13vw;
     font-weight: lighter;
     /* text-transform: uppercase; */
     text-align: center;
-    margin-top: 18vh;
+    margin-top: 10vh;
     line-height: 12vh;
     vertical-align: bottom;
+    /* background: black; */
+  /* text-shadow: -3px -3px 0 #000, 3px -3px 0 #000, -3px 3px 0 #000, 3px 3px 0 #000; */
+
   }
   .focus div {
     text-align: center;
