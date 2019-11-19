@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <link rel="icon" href="images/canada_canoe.jpg" type="image/x-icon" />
     <title>Allen Zhou's Online Home</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
     <link rel = "stylesheet" href = "main.css">
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -20,17 +21,27 @@
       <div class = "containter">
       <div id = "link" class = "navigation-bar">
         <a  class = "contact" href = "mailto:allen.zhou101@gmail.com">
-          Email
+          contact
         </a>
-        <a href = "https://github.com/allenzhou101" target = "none">Github</a>
+        <!-- <a href = "https://github.com/allenzhou101" target = "none">Github</a>
         <a  class = "resume" href = "Allen's Resume.pdf">
           Resume
         </a>
-        <a href = "https://www.linkedin.com/in/allen-zhou-aa975a164" target = "none">LinkedIn</a>
+        <a href = "https://www.linkedin.com/in/allen-zhou-aa975a164" target = "none">LinkedIn</a> -->
 
       </div>
       <h3 class = "intro">
-        Hey! I'm Allen Zhou.
+        <!-- Hey! I'm <div class = "stay"> -->
+          <p class = "name">Allen Zhou</p>
+        <!-- </div> -->
+        <!-- <div class = "sub-intro"> -->
+          <!-- a student of the world <p class = "sub-sub-intro">and UT Austin</p> -->
+        <!-- </div> -->
+        <div class = "focus">
+          <div class = "top">Making Products </div>
+          <div class = "middle">to Promote </div>
+          <div class = "bottom">Positive Change</div>
+        </div>
       </h3>
       <div class = "content">
         <p style = "" class = "tagline">
@@ -159,6 +170,10 @@
 
       document.addEventListener("scroll", function() {
         var scrollPosition = window.scrollY;
+        var topBottomNum = scrollPosition / 20;
+        var allenNum = scrollPosition / 10;
+        var lineHeight = 12 + scrollPosition / 100;
+        var scaleUp = 1 + scrollPosition / 500;
         // console.log(scrollPosition);
         // document.querySelector(".horizontal_scroll").style.transform = "translateX(-" + scrollPosition + "px)";
 
@@ -170,6 +185,21 @@
         else {
           document.querySelector(".horizontal_scroll").style.transform = "translateX(" + 0 + "px)";
         }
+        // document.querySelector(".top").style.transform = "translateX(" + topBottomNum + "px)";
+        // document.querySelector(".bottom").style.transform = "translateX(-" + topBottomNum + "px)";
+        // if (scaleUp > 1 & scaleUp < 1.1) {
+        //   document.querySelector(".focus").style.transform = "scale(" + scaleUp + ")";
+        //
+        // }
+        // else {
+        //   // document.querySelector(".focus").style.transform = "scale(" + 1 + ")";
+        //
+        // }
+        document.querySelector(".focus").style.lineHeight = lineHeight + "vh";
+
+        document.querySelector(".name").style.transform = "translateY(" + allenNum + "px)";
+
+
       });
     }
   </script>

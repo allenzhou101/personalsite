@@ -1,16 +1,18 @@
 body {
   margin: 2% 3% 3% 3%;
-  background: black;
+  background: #252A31;
   color: white;
   font-family: 'Montserrat', sans-serif;
   width: 80%;
   overflow-x: hidden;
 }
 .navigation-bar {
-  position: fixed;
-  top: 80vh;
-  right: 5vw;
-  transform: rotate(90deg) translateY(5vh);
+
+  top: 8vh;
+  /* right: 5vw; */
+  white-space: nowrap;
+  margin-left: 80vw;
+  transform: translateY(5vh);
   transform-origin: right;
   z-index: 100;
   font-size: 4vh;
@@ -54,6 +56,10 @@ img {
     width: 80%;
     overflow-x: hidden;
   }
+  .navigation-bar {
+    position: sticky;
+    margin-top: 85vh;
+}
 
   #link a:hover {
     /* color: gray; */
@@ -79,9 +85,54 @@ img {
   }
   .intro {
     font-weight: bold;
-    margin: 3% 0 2% 0 ;
-    animation: fadeIn 1s forwards;
+    margin: 8vh 0 2% 0 ;
+    position:absolute;
+    top: 0;
+  }
+  .name {
+    animation: fadeIn 1s .25s forwards;
     opacity: 0;
+
+  }
+  .stay {
+    display: inline-block;
+    z-index: 100;
+    position: fixed;
+    margin-left: 6px;
+  }
+  .sub-intro {
+    font-size: 2vh;
+  }
+  .sub-sub-intro {
+    font-style: italic;
+  }
+  .focus {
+    width: 100%;
+    font-size: 12vh;
+    margin-left: 10vw;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 18vh;
+    line-height: 12vh;
+    vertical-align: bottom;
+  }
+  .focus div {
+    text-align: center;
+  }
+  .top {
+
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+  }
+  .middle {
+
+    opacity: 0;
+    animation: fadeIn 1s .1s forwards;
+  }
+  .bottom {
+
+    opacity: 0;
+    animation: fadeIn 1s .2s forwards;
   }
   @keyframes fadeIn {
     100% {
@@ -97,7 +148,7 @@ img {
   }
   @keyframes fadeInUpSpecial {
     100% {
-      transform: translateY(0) rotate(90deg);
+      transform: translateY(0);
       opacity: 1;
     }
   }
