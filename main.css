@@ -11,7 +11,7 @@ body {
   top: 8vh;
   /* right: 5vw; */
   white-space: nowrap;
-  margin-left: 80vw;
+  margin-left: 85vw;
   transform: translateY(5vh);
   transform-origin: right;
   z-index: 100;
@@ -84,12 +84,15 @@ img {
 
   }
   .intro {
-    font-weight: bold;
+    font-weight: bolder;
     margin: 8vh 0 2% 0 ;
     position:absolute;
     top: 0;
+
   }
   .name {
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 4vh;
     animation: fadeIn 1s .25s forwards;
     opacity: 0;
 
@@ -98,6 +101,7 @@ img {
     display: inline-block;
     z-index: 100;
     position: fixed;
+    /* font-weight: bold; */
     margin-left: 6px;
   }
   .sub-intro {
@@ -109,8 +113,9 @@ img {
   .focus {
     width: 100%;
     font-size: 12vh;
-    margin-left: 10vw;
-    text-transform: uppercase;
+    margin-left: 13vw;
+    font-weight: lighter;
+    /* text-transform: uppercase; */
     text-align: center;
     margin-top: 18vh;
     line-height: 12vh;
@@ -157,6 +162,7 @@ img {
     opacity: 0;
     line-height: 20vh;
     transform: translateY(5vh);
+    margin-top: 6vh;
     animation: fadeInUp 1s .5s  forwards;
   }
   .tagline {
